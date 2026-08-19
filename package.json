@@ -1,0 +1,17 @@
+{
+  "name": "atta-apps",
+  "version": "1.0.0",
+  "description": "ATTA Applications",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "site",
+    "webhook"
+  ],
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run start"
+  }
+} 
