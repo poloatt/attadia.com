@@ -6,7 +6,7 @@
     caja: local ? "http://localhost:5174" : "https://atta.attadia.com",
     pulso: local ? "http://localhost:5175" : "https://pulso.attadia.com",
     boeda: "https://boeda.attadia.com/",
-    atta: local ? "http://localhost:3000/atta" : "https://www.attadia.com/atta",
+    atta: local ? "http://localhost:3000/atta" : "https://attadia.com/atta",
   };
 
   const app = document.getElementById("app");

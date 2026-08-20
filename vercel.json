@@ -13,5 +13,15 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/atta",
+      "destination": "https://www.attadia.com/atta"
+    },
+    {
+      "source": "/atta/:path*",
+      "destination": "https://www.attadia.com/atta/:path*"
+    }
   ]
 }
