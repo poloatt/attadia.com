@@ -1,14 +1,4 @@
 {
-  "buildCommand": "echo 'Static HQ - no build needed'",
-  "outputDirectory": ".",
-  "installCommand": "echo 'No dependencies to install'",
-  "framework": null,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
