@@ -3,10 +3,10 @@
 
   const LINKS = {
     foco: local ? "http://localhost:5173" : "https://foco.attadia.com",
-    caja: local ? "http://localhost:5174" : "https://atta.attadia.com",
+    caja: local ? "http://localhost:5174" : "https://caja.attadia.com",
     pulso: local ? "http://localhost:5175" : "https://pulso.attadia.com",
     boeda: "https://boeda.attadia.com/",
-    atta: local ? "http://localhost:3000/atta" : "https://attadia.com/atta",
+    atta: local ? "http://localhost:3000" : "https://atta.attadia.com",
   };
 
   const app = document.getElementById("app");

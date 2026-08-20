@@ -16,9 +16,18 @@ npm run dev
 | Host | Proyecto |
 |------|----------|
 | `attadia.com` | **este HQ** |
-| `www.attadia.com` | consulting (ATTA) |
+| `atta.attadia.com` | consulting (ATTA) |
 
-`/atta` en el HQ se reescribe a `https://www.attadia.com/atta` (`vercel.json`).
+### DNS en GoDaddy (apex `attadia.com`)
+
+El dominio raíz **no** usa CNAME. En Vercel → Domains → `attadia.com` vas a ver los records exactos; en GoDaddy suelen ser:
+
+| Tipo | Nombre | Valor |
+|------|--------|--------|
+| **A** | `@` | `76.76.21.21` |
+| **CNAME** (opcional `www`) | `www` | `cname.vercel-dns.com` |
+
+Subdominios (`atta`, `foco`, etc.) sí van con **CNAME** al valor que te muestre Vercel (casi siempre `cname.vercel-dns.com`).
 
 En local, si no ponés `GOOGLE_CLIENT_*` en `.env`, el HQ toma los de `technologies/apps/backend/.env`.
 
