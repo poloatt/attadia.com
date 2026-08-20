@@ -6,6 +6,7 @@
   "description": "Attadia HQ — intranet privada",
   "scripts": {
     "dev": "node --watch server.mjs",
-    "start": "node server.mjs"
+    "start": "node server.mjs",
+    "vercel-build": "node -e \"console.log('static + api, no build')\""
   }
 }
